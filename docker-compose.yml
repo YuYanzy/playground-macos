@@ -1,0 +1,17 @@
+version: "3"
+
+services: 
+    playground_macos:
+        image: node:14.9.0
+        container_name: playground_macos
+        working_dir: /app
+        volumes: 
+            - .:/app
+        stdin_open: true
+        ports: 
+            - 12345:3000 # port can be customized
+        environment: 
+            - TZ=Asia/shanghai
+        # command: [sh, -c, "yarn config set registry https://registry.npm.taobao.org/ && yarn install && yarn dev"] # first run
+        command: [sh, -c, "yarn dev"] # normal use run
+

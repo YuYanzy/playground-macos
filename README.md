@@ -22,6 +22,13 @@ yarn dev
 yarn build
 ```
 
+or by docker-compose:
+
+```bash
+sudo docker-compose up 
+```
+please check and change `docker-compose.yml` by yourself.
+
 
 &nbsp;
 
